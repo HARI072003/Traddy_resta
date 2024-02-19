@@ -1,0 +1,240 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+#navbar{
+    position: sticky;
+    top:0;
+    left: 0;
+    z-index: 100;
+    padding: .5rem 5rem;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, .5);
+    background: black;
+}
+#navbar .navbar-brand{
+    font-size: 28px;
+    font-weight:bolder;
+    color: green !important;
+
+}
+#navbarSupportedContent{
+    color: white;
+    border-bottom: 2px solid transparent;
+}
+#navbarSupportedContent a:hover{
+    border-bottom: 2px solid green;
+}
+#navbarSupportedContent button{
+    background: green;
+    width: 5rem;
+    border-radius: 15px;
+}
+section{
+    width:100;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+#form{
+    width:400px;
+    margin:5vh auto 0 auto;
+    background-color: whitesmoke;
+    border-radius: 5px;
+    padding: 30px;
+    display: none;
+  
+}
+.frm h2{
+    font-size: 25px;
+    margin-left: 83px;
+    color: #e72092;
+}
+.reg-box .ingr{
+    display:flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+
+
+}
+.reg-box .ingr input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 3px;
+    padding: 5px;
+    border: 1px solid rgb(34,193,195);
+
+}
+#form button{
+    border:1px solid;
+    padding:10px;
+    width:100%;
+    margin:20px auto;
+    border-radius: 5px;
+    background-color: aquamarine;
+    font-size: 20px;
+    cursor: pointer;
+
+}
+.input-group input{
+    border-radius: 5px;
+    font-size: 20px;
+    margin-top: 3px;
+    padding: 8px;
+    border: 1px solid rgb(34,193,195);
+
+}
+.input-group input:focus{
+    outline:0;
+}
+
+#home{
+    background: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.4)),url(images/bg1.jpg);
+    background-size: cover;
+    background-position: center;
+    flex-direction: column;
+}
+#home h1{
+    font-size: 100px;
+    color:white;
+    letter-spacing:3px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-shadow: 0px 1px 0px white;
+}
+#home p{
+    font-size:20px;
+    color: white;
+
+}
+#home .input-group{
+    width:40%;
+    height:45px;
+
+}
+.login{
+    background: green !important;
+    color:white !important;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, .3);
+}
+#about{
+    background:conic-gradient(red, yellow, green, blue, black);
+}
+.img-fluid{
+    border-radius: 30px;
+    width:400px;
+    padding-left: 70px;
+    padding-top: 80px;
+    
+}
+#about h1{
+    font-weight: 800;
+    font-size: 60px;
+    color: white;
+    border-top: 15px;
+
+}
+#about p{
+    color: white;
+}
+#products{
+    background:#e5e5e5;
+
+}
+#products h1{
+    font-size: 50px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+#products img{
+    width: 200px;
+    height: 200px;
+}
+.card{
+    width:250px;
+    height: 300px;
+    position: relative;
+    background: #e5e5e5 !important;
+    border:none !important;
+    border-radius: 20px !important;
+    overflow:hidden;
+    align-items:center;
+    margin:20px 60px;
+    opacity:1;
+    box-shadow: 15px 20px 20px rgba(0,0,0,.3),
+                inset 4px 4px 10px white;
+    
+
+}
+.small-card{
+    position: absolute;
+    display: flex;
+    flex-flow: column;
+    margin: 10px 0;
+    transform: translateX(-20px);
+    transition:0.3s;
+    padding : 10px;
+    top:0;
+    left: 10px;
+    opacity: 0;
+   
+
+}
+.card:hover .small-card{
+    transform: translateX(2px);
+    cursor: pointer;
+    opacity: 1;
+}
+.small-card i{
+    width: 45px;
+    height: 45px;
+    border-radius: 5px;
+    font-size: 18px;
+    margin: 2px 0;
+    line-height: 40px;
+    border: 2px solid #999999;
+    transition: 0.2s;
+    
+}
+.card:hover{
+    box-shadow: inset 5px 5px 10px rgba(0,0,0,.3),
+                inset -4px -4px 10px white;
+    transition:.2s;
+}
+.card .small-card i:hover{
+    color: #e72092;
+}
+#contact img{
+    height:100%;
+    margin-top:-48px;
+
+}
+.box{
+    width:80% !important;
+    margin-top: 10px;
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+}
+#contact input{
+    margin: 10px 0px;
+
+}
+#contact textarea{
+    margin: 10px 0px;
+}
+#contact img:hover{
+    transition: 1.5s;
+    transform: rotateZ(360deg);
+}
+#contact h1{
+    font-weight: 700;
+}
