@@ -238,3 +238,10 @@ form{
 #contact h1{
     font-weight: 700;
 }
+.signin{
+    color:black;
+    background-color: aquamarine;
+    border-radius: 8px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
